@@ -1,0 +1,3 @@
+#!/usr/bin/python3
+number = 3.149999
+print(f"Float: {number:.2f}")
