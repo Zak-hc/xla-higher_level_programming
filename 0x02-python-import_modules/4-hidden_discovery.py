@@ -4,7 +4,8 @@ import hidden_4
 if __name__ == "__main__":
     names = [name for name in dir(hidden_4)]
     a = len(names)
-    for name in names:
+    sorted_names = sorted(names)
+    for name in sorted_names:
         if name == 'my_secret_santa' or name == 'print_hidden':
             print(name)
         elif name == 'print_school':
