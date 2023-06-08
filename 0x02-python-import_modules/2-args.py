@@ -6,7 +6,7 @@ if __name__ == '__main__':
     if z == 0:
         print("{} arguments.".format(z))
     elif z == 1:
-        print("{} arguments:".format(z))
+        print("{} argument:".format(z))
         print("{}: {}".format(z, a[1]))
     else:
         print("{} arguments:".format(z))
