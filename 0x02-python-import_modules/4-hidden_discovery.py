@@ -5,5 +5,7 @@ if __name__ == "__main__":
     names = [name for name in dir(hidden_4)]
     a = len(names)
     for name in names:
-        if name == 'my_secret_santa' or name == 'print_hidden' or name == 'print_school':
+        if name == 'my_secret_santa' or name == 'print_hidden':
+            print(name)
+        elif name == 'print_school':
             print(name)
