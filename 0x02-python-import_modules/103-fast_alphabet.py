@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 import sys
-for char in map(chr, range(65, 91)):
-    sys.stdout.write(char)
-sys.stdout.write('\n')
+sys.stdout.write(''.join(chr(x) for x in range(65, 91)) + '\n')
