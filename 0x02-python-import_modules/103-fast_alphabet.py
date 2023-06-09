@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-import string
-print(string.ascii_uppercase)
+import sys
+for char in map(chr, range(65, 91)):
+    sys.stdout.write(char)
+sys.stdout.write('\n')
