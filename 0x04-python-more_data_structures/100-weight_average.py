@@ -12,6 +12,6 @@ def weight_average(my_list=[]):
             toto_weight += j
             j += 1
         if toto_weight == 0:
-            return 0   
+            return 0
         w = sum/toto_weight
         return w
