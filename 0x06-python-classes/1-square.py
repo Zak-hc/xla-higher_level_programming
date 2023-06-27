@@ -1,17 +1,14 @@
 #!/usr/bin/python3
+# 1-square.py by zaha
+"""Defines a square """
+
+
 class Square:
-    """
-    Represents a square.
+    """Represents a square"""
 
-    The Square class defines a square object with a single attribute, size.
-    It provides a way to create square instances with a specified size.
-
-    Args:
-        size (int): The size of the square.
-
-    Attributes:
-        __size (int): The size of the square (private).
-
-    """
     def __init__(self, size):
+        """Initializing this square class
+        Args: size - represnets the size of the square defined private
+        """
+
         self.__size = size
