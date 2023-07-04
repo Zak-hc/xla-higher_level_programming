@@ -3,7 +3,6 @@
 
 
 class Rectangle:
-    def __init__(self):
         """Represents a square."""
 
         pass
