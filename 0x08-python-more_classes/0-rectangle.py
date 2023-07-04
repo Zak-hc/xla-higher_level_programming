@@ -3,6 +3,6 @@
 
 
 class Rectangle:
-        """Represents a square."""
+    """Represents a square."""
 
-        pass
+    pass
