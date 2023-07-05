@@ -1,0 +1,4 @@
+Before the execution of line 2 (print("Love")), no explicit integer objects have been created or used. The statements "I", "Love", and "Python" are string literals and do not involve the creation of integer objects.
+
+The number of int objects created and still in memory at that point would be determined by the pre-allocated and cached small integer range, which depends on the specific implementation of CPython. Based on the default values (`NSMALLPOSINTS = 257` and `NSMALLNEGINTS = -5`), there would be a total of 263 small integer objects available for reuse in memory.
+
