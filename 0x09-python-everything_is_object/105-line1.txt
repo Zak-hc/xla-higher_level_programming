@@ -1,5 +1,7 @@
-Before the execution of line 2 (print("Love")), a total of 27 int objects have been created and are still in memory.
+Before the execution of line 2 (print("Love")), a total of 28 int objects have been created and are still in memory.
 
-This can be explained by the small integer caching mechanism in CPython. In CPython, small integers in the range [-5, 256] are pre-allocated and shared, which means they are created once and reused throughout the program. This optimization helps to improve performance and reduce memory consumption.
+The small integer caching mechanism in CPython plays a role in this. In CPython, the integers in the range [-5, 256] are pre-allocated and shared, which means they are created once and reused throughout the program. This optimization helps to improve performance and reduce memory consumption.
 
-Considering the code provided, the integers 0, 1, 2, 3, 4, and 5 are created as small integer objects when executing line 1 (print("I")). Similarly, the integers -5, -4, -3, -2, -1, and 6 are created when executing line 3 (print("Python")). Since line 2 (print("Love")) does not involve the creation of any new integers, the total count remains at 27.
+Considering the code provided, the integers 0, 1, 2, 3, 4, 5, and 98 (default value of b) are created as small integer objects when executing line 1 (print("I")). Similarly, the integers -5, -4, -3, -2, -1, and 6 are created when executing line 3 (print("Python")). Since line 2 (print("Love")) does not involve the creation of any new integers, the total count remains at 28.
+
+
