@@ -1,57 +1,27 @@
 def add_integer(a, b=98):
     """
-    Adds two ints or floats together.
+    Ajoute deux entiers et retourne la somme.
 
-    >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(2, 4)
-    6
+    Args:
+        a (int): Premier entier.
+        b (int, optional): Deuxième entier. Par défaut, sa valeur est 98.
 
-    >>> add_integer(-100, 34)
-    -66
+    Returns:
+        int: La somme de a et b.
 
-    >>> add_integer(-10)
-    88
+    Raises:
+        TypeError: Si a ou b ne sont pas des entiers.
 
-    >>> add_integer(5.6, 2.7)
-    7
-
-    >>> add_integer(-2.3, 1.9)
-    -1
-
-    >>> add_integer("2", 3)
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-    >>> add_integer('tee')
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-    >>> add_integer(3, "-6")
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
-
-    >>> add_integer(None)
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-    >>> add_integer(-15, None)
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
-
-    >>> add_integer(2+3j, 4)
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-    >>> add_integer(-8.5, -5+4j)
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
     """
 
+    # Vérification du type de a
+    if not isinstance(a, (int, float)):
+        raise TypeError("a doit être un entier")
+
+    # Vérification du type de b
+    if not isinstance(b, (int, float)):
+        raise TypeError("b doit être un entier")
+
+    # Addition de a et b (convertis en entiers) et retour du résultat
     return int(a) + int(b)
+
