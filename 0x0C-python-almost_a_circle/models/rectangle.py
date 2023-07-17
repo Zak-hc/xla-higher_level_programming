@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from models.base import Base
+
+
 class Rectangle(Base):
     """Represent a rectangle."""
 
@@ -17,7 +19,7 @@ class Rectangle(Base):
             ValueError: If either of width or height <= 0.
             TypeError: If either of x or y is not an int.
             ValueError: If either of x or y < 0.
-        """        
+        """
         self.width = width
         self.height = height
         self.x = x
@@ -75,9 +77,11 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
+
     def display(self):
         """Print the Rectangle using the `#` character."""
         for i in range(self.height):
