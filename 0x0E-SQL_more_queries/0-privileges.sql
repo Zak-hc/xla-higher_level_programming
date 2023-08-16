@@ -1,2 +1,4 @@
--- show user permission
-SHOW GRANTS FOR 'user_0d_1'@'localhost'; SHOW GRANTS FOR 'user_0d_2'@'localhost';
+-- show user permissioni
+-- by zendenzidan
+SHOW GRANTS FOR 'user_0d_1'@'localhost';
+SHOW GRANTS FOR 'user_0d_2'@'localhost';
