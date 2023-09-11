@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const argumentos = process.argv;
-if (argumentos.length > 2) {
+if (typeof argumentos[2] != 'undefined') {
   const vivo = process.argv[2];
   console.log(vivo);
 } else {
