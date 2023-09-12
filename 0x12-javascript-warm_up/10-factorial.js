@@ -1,12 +1,20 @@
 #!/usr/bin/node
 
-function factorial (n) {
-  if (isNaN(n) || n < 0) {
-    return 1; // Factorial of NaN or negative numbers is 1
+function formatNumber(num) {
+  if (num === Infinity) {
+    return 'Infinity';
+  } else if (num >= 1e100) {
+    return num.toString();
+  } else {
+    return num.toString();
+  }
+}
+
+function factorial(n) {
+  if (n < 0) {
+    return 'Factorial is undefined for negative numbers';
   } else if (n === 0) {
-    return 1; // Factorial of 0 is 1
-  } else if (n === 333) {
-    return Infinity; // Special case for the factorial of 333
+    return 1n; // Factorial of 0 is 1
   } else {
     let result = 1n;
     for (let i = 1n; i <= n; i++) {
@@ -17,8 +25,9 @@ function factorial (n) {
 }
 
 const input = process.argv[2];
-const num = parseInt(input, 10);
+const num = BigInt(input);
 
 const result = factorial(num);
 
-console.log(result.toString());
+console.log(formatNumber(result));
+
