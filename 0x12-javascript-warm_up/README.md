@@ -1,3 +1,3 @@
-#!/usr/bin/python3
-# alx-higher_level_programming
-Python programming
+#!/usr/bin/node
+#first day in JAVASCRIPT 
+#BISSMILLAH TAWAKALNA 3LA LAH 
