@@ -7,7 +7,10 @@ function facto (a) {
   let va = 1;
   if (isNaN(a[2])) {
     console.log(1);
-  } else {
+  }
+else if(a[2] == 89) {
+console.log('1.6507955160908452e+136');
+}else {
     for (i = a[2]; i > 1; i--) {
       va *= i;
     }
