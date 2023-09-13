@@ -1,33 +1,16 @@
 #!/usr/bin/node
+const myarg = process.argv;
+facto(myarg);
 
-function formatNumber(num) {
-  if (num === Infinity) {
-    return 'Infinity';
-  } else if (num >= 1e100) {
-    return num.toString();
+function facto (a) {
+  let i;
+  let va = 1;
+  if (isNaN(a[2])) {
+    console.log(1);
   } else {
-    return num.toString();
-  }
-}
-
-function factorial(n) {
-  if (n < 0) {
-    return 'Factorial is undefined for negative numbers';
-  } else if (n === 0) {
-    return 1n; // Factorial of 0 is 1
-  } else {
-    let result = 1n;
-    for (let i = 1n; i <= n; i++) {
-      result *= i;
+    for (i = a[2]; i > 1; i--) {
+      va *= i;
     }
-    return result;
+    console.log(Number(va));
   }
 }
-
-const input = process.argv[2];
-const num = BigInt(input);
-
-const result = factorial(num);
-
-console.log(formatNumber(result));
-

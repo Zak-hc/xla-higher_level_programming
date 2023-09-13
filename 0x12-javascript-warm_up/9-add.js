@@ -1,10 +1,16 @@
 #!/usr/bin/node
-const a = process.argv;
-if (!isNaN(a[2]) && !isNaN(a[3])) {
-  add(Number(a[2]), Number(a[3]));
-} else {
-  console.log('NaN');
-}
-function add (a, b) {
-  console.log(a + b);
+const myarg = process.argv;
+facto(myarg);
+
+function facto (a) {
+  let i;
+  let va = 1;
+  if (isNaN(a[2])) {
+    console.log(1);
+  } else {
+    for (i = a[2]; i > 1; i--) {
+      va *= i;
+    }
+    console.log(va);
+  }
 }
