@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""print all states from hbtn_0e_0_usa database"""
 import MySQLdb
 import sys
 
