@@ -14,8 +14,12 @@ def detectme():
                         db=argvv[3])
 
     veronic = n.cursor()
-    veronic.execute("SELECT*FROM states
-                    WHERE name='{}' ORDER BY id ASC".format(argvv[4]))
+    veronic.execute(
+            """
+                SELECT*FROM states
+                WHERE BINARY name='{}'
+                ORDER BY id ASC
+            """.format(argvv[4]))
     hussa = veronic.fetchall()
     for i in hussa:
         print(i)
