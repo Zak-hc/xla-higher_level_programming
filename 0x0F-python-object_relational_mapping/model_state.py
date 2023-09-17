@@ -2,7 +2,7 @@
 """python file that contains the class definition of a State"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-
+from sqlalchemy import engine
 Base = declarative_base()
 
 Base.metadata.bind = engine
