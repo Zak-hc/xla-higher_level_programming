@@ -10,7 +10,10 @@ if __name__ == "__main__":
         sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     s = sessionmaker(var)
     session = s()
-    rr = session.query(State).filter(State.name.like('%a%')
-                                     ).order_by(State.id.asc()).first()
-    for i in rr:
-        print(i.id, i.name, sep=': ')
+    ver = sys.argv[4]
+    rr = session.query(State).filter(State.name.like(ver)
+                                     ).first()
+    if rr:
+        print(rr.id)
+    else:
+        print('Not found')
