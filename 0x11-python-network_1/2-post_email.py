@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-"""
+"""script takesinURL and an emailsendsPOSTrequest tothepassed URL withmail"""
 import sys
 import urllib.request
 
