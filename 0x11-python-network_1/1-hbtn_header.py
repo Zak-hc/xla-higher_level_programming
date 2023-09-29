@@ -15,5 +15,3 @@ if __name__ == "__main__":
         if i in body:
             store = body[i]
             print(store)
-        else:
-            print('desole')
