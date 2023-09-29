@@ -9,5 +9,4 @@ try:
             if req[i] == 200:
                 print("Index")
 except HTTPError as err:
-    print("Error code: " ,err.code)
-
+    print("Error code: ", err.code)
