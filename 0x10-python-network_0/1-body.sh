@@ -1,3 +1,3 @@
 #!/bin/bash
 #script that takes in aURL, sends GETrequest to theURL,anddisplaythe bodyoftherespons
-curl -X GET "$1"
+curl -sX GET "$1"
