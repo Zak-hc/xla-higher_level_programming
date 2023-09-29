@@ -9,4 +9,4 @@ if __name__ == "__main__":
             a = req.read().decode("UTF-8")
             print(a)
     except HTTPError as err:
-        print("Error code: " err.code)
+        print(f"Error code: {err.code}")
